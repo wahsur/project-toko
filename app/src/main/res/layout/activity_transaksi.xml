@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nama Pelanggan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edtNamaPelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama pelanggan"
+            android:inputType="textPersonName" />
+
+        <!-- Spinner Kategori -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Pilih Kategori"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinnerKategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Spinner Barang -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Pilih Barang"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinnerBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Jumlah -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Jumlah"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edtJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan jumlah"
+            android:inputType="number" />
+
+        <!-- Diskon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Diskon (%)"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edtDiskon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan diskon"
+            android:inputType="numberDecimal" />
+
+        <!-- Metode Pembayaran (RadioGroup) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Metode Pembayaran"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:id="@+id/radioGrupPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash" />
+
+            <RadioButton
+                android:id="@+id/rbQRIS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QRIS" />
+        </RadioGroup>
+
+        <!-- Tombol Hitung -->
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hitung Total"
+            android:layout_marginTop="16dp" />
+
+        <!-- TextView Hasil Total -->
+        <TextView
+            android:id="@+id/txtHasilTransaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: Rp0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Transaksi"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
