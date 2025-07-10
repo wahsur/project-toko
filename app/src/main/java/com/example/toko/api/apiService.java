@@ -4,6 +4,7 @@ import com.example.toko.response.ResponseBarang;
 import com.example.toko.response.ResponseKategori;
 import com.example.toko.response.ResponseLogin;
 import com.example.toko.response.ResponseRegister;
+import com.example.toko.response.ResponseTransaksi;
 import com.example.toko.response.ResponseUser;
 
 import java.util.Map;
@@ -91,7 +92,6 @@ public interface apiService {
     @GET("user/{id}")
     Call<ResponseUser> getUser(@Path("id") int id);
 
-    //    Transaksi
     // Ambil semua kategori
     @GET("kategori")
     Call<ResponseKategori> getKategori();
@@ -104,6 +104,9 @@ public interface apiService {
     // Simpan transaksi ke server
     @POST("transaksi")
     Call<ResponseBody> simpanTransaksi(@Body Map<String, Object> data);
+
+    @GET("transaksi")
+    Call<ResponseTransaksi> getTransaksi();
 
 
 }

@@ -33,6 +33,8 @@
         <activity android:name=".AddEditKategori"/>
         <activity android:name=".EditProfileActivity"/>
         <activity android:name=".TransaksiActivity"/>
+        <activity android:name=".ListTransaksiActivity"/>
+        <activity android:name=".DetailTransaksiActivity"/>
     </application>
 
 </manifest>

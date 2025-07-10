@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView tvNamaToko;
-    LinearLayout btnBarang, btnKategori, btnTransaksi;
+    LinearLayout btnBarang, btnKategori, btnTransaksi, btnRiwayat;
     Button btnProfil;
 
     @Override
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnKategori = findViewById(R.id.btnKategori);
         btnTransaksi = findViewById(R.id.btnTransaksi);
         btnProfil = findViewById(R.id.btnProfil);
+        btnRiwayat = findViewById(R.id.btnRiwayat);
 
         btnProfil.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, EditProfileActivity.class);
@@ -52,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TransaksiActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRiwayat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListTransaksiActivity.class);
                 startActivity(intent);
             }
         });
