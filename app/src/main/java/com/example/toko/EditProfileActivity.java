@@ -1,5 +1,6 @@
 package com.example.toko;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +16,7 @@ import retrofit2.Response;
 public class EditProfileActivity extends AppCompatActivity {
 
     EditText etNamaToko, etUsername, etPassword;
-    Button btnUpdate;
+    Button btnUpdate, btnKembali, btnLogout;
     apiService api;
     SharedPreferences prefs;
 
@@ -28,6 +29,8 @@ public class EditProfileActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnUpdate = findViewById(R.id.btnUpdate);
+        btnKembali = findViewById(R.id.btnKembali);
+        btnLogout = findViewById(R.id.btnLogout);
 
         prefs = getSharedPreferences("user", MODE_PRIVATE);
         int userId = prefs.getInt("id", -1);
@@ -66,5 +69,20 @@ public class EditProfileActivity extends AppCompatActivity {
                 }
             });
         });
+
+        btnKembali.setOnClickListener(v -> finish());
+
+        btnLogout.setOnClickListener(v -> {
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.clear();
+            editor.apply();
+
+            Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
+        });
+
+
     }
 }
