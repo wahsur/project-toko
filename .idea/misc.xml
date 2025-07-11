@@ -20,6 +20,18 @@
         <entry key="..\:/Projects/AndroidStudio/Toko/app/src/main/res/layout/item_barang.xml" value="0.17552083333333332" />
         <entry key="..\:/Projects/AndroidStudio/Toko/app/src/main/res/layout/item_transaksi.xml" value="0.15052083333333333" />
         <entry key="..\:/Projects/AndroidStudio/Toko/app/src/main/res/xml/network_security_config.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/drawable/border_box.xml" value="0.1575" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/drawable/edittext_background.xml" value="0.1585" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_add_edit_barang.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_add_edit_kategori.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_edit_profile.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_kategori.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_list_transaksi.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_login.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_main.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_register.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_transaksi.xml" value="0.18697916666666667" />
+        <entry key="..\:/Users/YUNIARISTA/AndroidStudioProjects/project-toko/app/src/main/res/layout/item_transaksi.xml" value="0.18697916666666667" />
       </map>
     </option>
   </component>

@@ -1,4 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -6,13 +8,18 @@
 
     <Button
         android:id="@+id/btnTambahKategori"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tambah Kategori" />
+        style="@style/ButtonToko"
+        android:text="Tambah Kategori"
+        android:drawableStart="@drawable/ic_add"
+        android:gravity="center_vertical"
+        android:drawablePadding="12dp"
+        android:paddingStart="100dp"
+        android:textSize="16dp" />
 
     <ListView
         android:id="@+id/listViewKategori"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"/>
+
 </LinearLayout>

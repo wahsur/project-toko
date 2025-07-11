@@ -1,31 +1,86 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
 
-    <EditText
-        android:id="@+id/etNamaToko"
-        android:hint="Nama Toko"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-    <EditText
-        android:id="@+id/etUsername"
-        android:hint="Username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👤 PROFILE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#002B5B"
+            android:layout_marginBottom="24dp" />
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:hint="Password Baru (opsional)"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <!-- Input Nama Toko -->
+        <EditText
+            android:id="@+id/etNamaToko"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nama Toko"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColorHint="#636363"
+            android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/btnUpdate"
-        android:text="Simpan Perubahan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        <!-- Input Nama Pengguna -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColorHint="#636363"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Password Baru -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password Baru"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColorHint="#636363"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/ButtonToko"
+            android:text="Simpan Perubahan" />
+
+        <!-- Tombol Kembali -->
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B0B0B0"
+            android:textColor="@android:color/white"
+            android:text="Kembali"
+            android:textAllCaps="false"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:background="@drawable/button_rounded"/>
+
+        <!-- Tombol Logout -->
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/ButtonLogout"
+            android:layout_width="220dp"
+            android:text="Logout"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

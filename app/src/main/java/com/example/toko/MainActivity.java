@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -14,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvNamaToko;
     LinearLayout btnBarang, btnKategori, btnTransaksi, btnRiwayat;
-    Button btnProfil;
+    ImageView ivProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +26,15 @@ public class MainActivity extends AppCompatActivity {
         btnBarang = findViewById(R.id.btnBarang);
         btnKategori = findViewById(R.id.btnKategori);
         btnTransaksi = findViewById(R.id.btnTransaksi);
-        btnProfil = findViewById(R.id.btnProfil);
         btnRiwayat = findViewById(R.id.btnRiwayat);
+        ivProfile = findViewById(R.id.ivProfile);
 
-        btnProfil.setOnClickListener(v -> {
+        // Klik ikon profil → buka edit profil
+        ivProfile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, EditProfileActivity.class);
             startActivity(intent);
         });
+
         updateNamaToko();
 
         btnBarang.setOnClickListener(new View.OnClickListener() {
