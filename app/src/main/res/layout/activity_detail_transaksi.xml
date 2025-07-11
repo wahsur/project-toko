@@ -1,11 +1,23 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
 
-    <TextView
-        android:id="@+id/txtDetailInfo"
-        android:textSize="16sp"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtDetailInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:background="@drawable/edittext_background"
+            android:elevation="2dp"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
 </ScrollView>

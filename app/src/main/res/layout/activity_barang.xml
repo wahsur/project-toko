@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/btnTambahBarang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tambah Barang"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#001F4D"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_primary"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvBarang"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@+id/btnTambahBarang"
+        android:id="@+id/btnBack"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tambah Barang"/>
+        android:layout_height="50dp"
+        android:text="Kembali"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_gray" />
+
 </LinearLayout>

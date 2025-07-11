@@ -1,51 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#f0f0f0"
-    android:layout_margin="4dp">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="12dp"
+    android:background="@drawable/rounded_card"
+    android:elevation="4dp">
 
     <TextView
         android:id="@+id/tvNamaBarang"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Nama Barang"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp" />
 
     <TextView
         android:id="@+id/tvKategori"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Kategori: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="2dp" />
 
     <TextView
         android:id="@+id/tvJumlah"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Jumlah: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="2dp" />
 
     <TextView
         android:id="@+id/tvHarga"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Harga: Rp "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="8dp">
+        android:gravity="end"
+        android:layout_marginTop="8dp">
 
         <Button
             android:id="@+id/btnEdit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Edit"/>
+            android:layout_height="36dp"
+            android:text="Edit"
+            android:textSize="13sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_rounded_blue" />
 
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:text="Hapus"
-            android:layout_marginStart="8dp"/>
+            android:textSize="13sp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/btn_rounded_red" />
     </LinearLayout>
+
 </LinearLayout>

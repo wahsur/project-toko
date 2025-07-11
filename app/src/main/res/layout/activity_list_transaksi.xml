@@ -2,10 +2,22 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Transaksi"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="8dp" />
 
     <ListView
         android:id="@+id/listViewTransaksi"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
 </LinearLayout>

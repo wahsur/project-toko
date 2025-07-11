@@ -1,22 +1,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="12dp"
+    android:padding="16dp"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#eeeeee"
-    android:layout_marginBottom="10dp">
+    android:background="@drawable/edittext_background"
+    android:elevation="3dp">
 
-    <TextView android:id="@+id/txtNamaPelanggan"
+    <TextView
+        android:id="@+id/txtNamaPelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pelanggan"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textColor="#212121"
+        android:layout_marginBottom="4dp" />
 
-    <TextView android:id="@+id/txtTotal"
+    <TextView
+        android:id="@+id/txtTotal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Total: Rp "
+        android:textColor="#555555"
+        android:layout_marginBottom="2dp" />
 
-    <TextView android:id="@+id/txtMetode"
+    <TextView
+        android:id="@+id/txtMetode"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Metode: "
+        android:textColor="#555555" />
 </LinearLayout>
