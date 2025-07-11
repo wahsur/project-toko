@@ -23,7 +23,7 @@ import retrofit2.Response;
 public class BarangActivity extends AppCompatActivity {
 
     RecyclerView rvBarang;
-    Button btnTambahBarang;
+    Button btnTambahBarang, btnback;
     apiService api;
     BarangAdapter adapter;
 
@@ -34,6 +34,7 @@ public class BarangActivity extends AppCompatActivity {
 
         rvBarang = findViewById(R.id.rvBarang);
         btnTambahBarang = findViewById(R.id.btnTambahBarang);
+        btnback = findViewById(R.id.btnBack);
 
         api = apiClient.getClient().create(apiService.class);
 
@@ -45,6 +46,8 @@ public class BarangActivity extends AppCompatActivity {
             Intent intent = new Intent(BarangActivity.this, AddEditBarang.class);
             startActivity(intent);
         });
+
+        btnback.setOnClickListener(v -> finish());
     }
 
     @Override

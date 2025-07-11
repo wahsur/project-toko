@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:orientation="vertical"
@@ -22,17 +22,15 @@
             android:gravity="center"
             android:layout_marginBottom="24dp" />
 
-        <!-- Form dalam Card Style -->
+        <!-- Form Card -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/bg_card"
             android:elevation="4dp"
-            android:layout_marginBottom="24dp"
-            android:layout_marginTop="4dp"
-            android:clipToPadding="false">
+            android:layout_marginBottom="24dp">
 
             <!-- Nama Pelanggan -->
             <TextView
@@ -47,10 +45,11 @@
                 android:layout_height="wrap_content"
                 android:hint="Masukkan nama pelanggan"
                 android:inputType="textPersonName"
-                android:backgroundTint="#2196F3"
-                android:layout_marginBottom="12dp" />
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:padding="10dp"/>
 
-            <!-- Spinner Kategori -->
+            <!-- Kategori -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,10 +60,10 @@
                 android:id="@+id/spinnerKategori"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:background="@android:drawable/btn_dropdown"/>
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/btn_dropdown" />
 
-            <!-- Spinner Barang -->
+            <!-- Barang -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,8 +74,8 @@
                 android:id="@+id/spinnerBarang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:background="@android:drawable/btn_dropdown"/>
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/btn_dropdown" />
 
             <!-- Jumlah -->
             <TextView
@@ -91,8 +90,9 @@
                 android:layout_height="wrap_content"
                 android:hint="Masukkan jumlah"
                 android:inputType="number"
-                android:backgroundTint="#2196F3"
-                android:layout_marginBottom="12dp" />
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:padding="10dp" />
 
             <!-- Diskon -->
             <TextView
@@ -107,8 +107,9 @@
                 android:layout_height="wrap_content"
                 android:hint="Masukkan diskon"
                 android:inputType="numberDecimal"
-                android:backgroundTint="#2196F3"
-                android:layout_marginBottom="12dp" />
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:padding="10dp" />
 
             <!-- Metode Pembayaran -->
             <TextView
@@ -117,13 +118,13 @@
                 android:text="Metode Pembayaran"
                 android:textStyle="bold"
                 android:textColor="#333333"
-                android:layout_marginBottom="4dp" />
+                android:layout_marginBottom="8dp" />
             <RadioGroup
                 android:id="@+id/radioGrupPembayaran"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="24dp">
                 <RadioButton
                     android:id="@+id/rbCash"
                     android:layout_width="wrap_content"
@@ -145,9 +146,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hitung Total"
+                android:textColor="#FFFFFF"
                 android:background="@drawable/button_rounded"
-                android:backgroundTint="#2196F3"
-                android:textColor="#FFFFFF" />
+                android:layout_marginBottom="12dp" />
 
             <!-- Total Harga -->
             <TextView
@@ -159,8 +160,7 @@
                 android:textSize="18sp"
                 android:gravity="center"
                 android:textColor="#D32F2F"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="16dp" />
 
             <!-- Tombol Simpan -->
             <Button
@@ -168,12 +168,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Simpan Transaksi"
-                android:background="@drawable/button_rounded"
                 android:textColor="#FFFFFF"
-                android:layout_marginTop="8dp" />
+                android:background="@drawable/rounded_primary" />
+
         </LinearLayout>
-
     </LinearLayout>
-
-
 </ScrollView>

@@ -3,20 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:background="#FFFFFF">
+    android:padding="16dp">
 
     <Button
         android:id="@+id/btnTambahBarang"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
         android:text="Tambah Barang"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:backgroundTint="#001F4D"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/rounded_primary"/>
+
+        style="@style/ButtonToko"
+        android:drawableStart="@drawable/ic_add"
+        android:gravity="center_vertical"
+        android:drawablePadding="12dp"
+        android:paddingStart="100dp"
+        android:textSize="16dp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvBarang"

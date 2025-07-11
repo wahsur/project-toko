@@ -67,10 +67,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseLogin> call, Response<ResponseLogin> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    if (response.body().getMessage().equals("Login berhasil")) {
-                        Toast.makeText(LoginActivity.this, "Login berhasil", Toast.LENGTH_SHORT).show();
+                    if (response.body().getUser() != null) {
+                        // Login berhasil
+                        Toast.makeText(LoginActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();
 
-                        // Simpan data user atau token di SharedPreferences jika perlu
                         SharedPreferences prefs = getSharedPreferences("user", MODE_PRIVATE);
                         SharedPreferences.Editor editor = prefs.edit();
                         editor.putInt("id", response.body().getUser().getId());
@@ -82,12 +82,12 @@ public class LoginActivity extends AppCompatActivity {
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
-
                     } else {
+                        // Login gagal (user null)
                         Toast.makeText(LoginActivity.this, "Login gagal: " + response.body().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(LoginActivity.this, "Response gagal", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Gagal menghubungi server", Toast.LENGTH_SHORT).show();
                 }
             }
 

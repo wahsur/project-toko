@@ -17,20 +17,28 @@
         <entry key="..\:/Projects/AndroidStudio/Toko/app/src/main/res/layout/edittext_background.xml" value="0.15989583333333332" />
         <entry key="..\:/Projects/AndroidStudio/Toko/app/src/main/res/layout/item_barang.xml" value="0.17552083333333332" />
         <entry key="..\:/Projects/AndroidStudio/Toko/app/src/main/res/xml/network_security_config.xml" value="0.15806159420289856" />
-
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/bg_card.xml" value="0.1" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/bg_input.xml" value="0.1" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/btn_rounded_blue.xml" value="0.1" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/btn_rounded_red.xml" value="0.1" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/button_rounded.xml" value="0.1415" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/edittext_background.xml" value="0.1" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/rounded_card.xml" value="0.1" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/rounded_gray.xml" value="0.1" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/rounded_primary.xml" value="0.1415" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/drawable/spinner_background.xml" value="0.1" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_add_edit_barang.xml" value="0.1" />
-        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_barang.xml" value="0.1" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_add_edit_kategori.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_barang.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_detail_transaksi.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_edit_profile.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_kategori.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_list_transaksi.xml" value="0.1" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_transaksi.xml" value="0.1" />
-        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/item_barang.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_register.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/activity_transaksi.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/item_barang.xml" value="0.22" />
         <entry key="..\:/Users/rupay/AndroidStudioProjects/project-toko/app/src/main/res/layout/item_transaksi.xml" value="0.17552083333333332" />
       </map>
     </option>
