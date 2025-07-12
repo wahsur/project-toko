@@ -36,9 +36,22 @@
         android:layout_height="wrap_content"
         android:text="Hapus"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#F44336"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_rounded_red"
         android:textColor="#FFF"
         android:padding="12dp"
-        android:visibility="gone" />
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Kembali"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#B0BEC5"
+        android:background="@drawable/rounded_gray" />
 
 </LinearLayout>

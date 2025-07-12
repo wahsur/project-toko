@@ -1,5 +1,6 @@
 package com.example.toko;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -24,7 +25,7 @@ public class AddEditBarang extends AppCompatActivity {
 
     EditText etNama, etJumlah, etHarga;
     Spinner spinnerKategori;
-    Button btnSimpan;
+    Button btnSimpan, btnKembali;
 
     apiService api;
 
@@ -45,6 +46,7 @@ public class AddEditBarang extends AppCompatActivity {
         etHarga = findViewById(R.id.etHarga);
         spinnerKategori = findViewById(R.id.spinnerKategori);
         btnSimpan = findViewById(R.id.btnSimpan);
+        btnKembali = findViewById(R.id.btnBack);
 
         api = apiClient.getClient().create(apiService.class);
 
@@ -79,6 +81,13 @@ public class AddEditBarang extends AppCompatActivity {
         loadKategoriFromApi();
 
         btnSimpan.setOnClickListener(v -> simpanBarang());
+        btnKembali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddEditBarang.this, BarangActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void loadKategoriFromApi() {

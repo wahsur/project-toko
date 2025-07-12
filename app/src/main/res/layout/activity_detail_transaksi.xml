@@ -7,7 +7,17 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DETAIL TRANSAKSI"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#002B5B"
+            android:layout_marginBottom="24dp" />
 
         <TextView
             android:id="@+id/txtDetailInfo"
@@ -15,9 +25,21 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:textSize="16sp"
-            android:textColor="#333333"
-            android:background="@drawable/edittext_background"
+            android:textColor="#f7f7f7"
+            android:background="@drawable/rounded_card"
             android:elevation="2dp"
             android:lineSpacingExtra="4dp" />
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Kembali"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#B0BEC5"
+            android:background="@drawable/rounded_gray" />
     </LinearLayout>
+
 </ScrollView>

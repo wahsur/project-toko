@@ -17,7 +17,7 @@ import retrofit2.Response;
 
 public class KategoriActivity extends AppCompatActivity {
     ListView listView;
-    Button btnTambah;
+    Button btnTambah, btnBack;
     apiService api;
     List<Kategori> kategoriList;
 
@@ -28,10 +28,18 @@ public class KategoriActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.listViewKategori);
         btnTambah = findViewById(R.id.btnTambahKategori);
+        btnBack = findViewById(R.id.btnBack);
         api = apiClient.getClient().create(apiService.class);
 
         btnTambah.setOnClickListener(v -> {
             startActivity(new Intent(this, AddEditKategori.class));
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(KategoriActivity.this, MainActivity.class));
+            }
         });
 
         loadKategori();

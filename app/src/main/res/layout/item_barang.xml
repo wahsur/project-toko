@@ -17,7 +17,7 @@
         android:text="Nama Barang"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="#212121"
+        android:textColor="#f7f7f7"
         android:layout_marginBottom="6dp" />
 
     <!-- Detail Info -->
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Kategori: Elektronik"
         android:textSize="15sp"
-        android:textColor="#555555"
+        android:textColor="#f7f7f7"
         android:layout_marginBottom="2dp" />
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:text="Jumlah: 5"
         android:textSize="15sp"
-        android:textColor="#555555"
+        android:textColor="#f7f7f7"
         android:layout_marginBottom="2dp" />
 
     <TextView
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="Harga: Rp 100.000"
         android:textSize="15sp"
-        android:textColor="#555555"
+        android:textColor="#f7f7f7"
         android:layout_marginBottom="12dp" />
 
     <!-- Tombol Aksi -->

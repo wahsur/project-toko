@@ -47,7 +47,9 @@ public class BarangActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnback.setOnClickListener(v -> finish());
+        btnback.setOnClickListener(v -> {
+            startActivity(new Intent(BarangActivity.this, MainActivity.class));
+        });
     }
 
     @Override

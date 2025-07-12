@@ -1,5 +1,6 @@
 package com.example.toko;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -73,16 +74,23 @@ public class EditProfileActivity extends AppCompatActivity {
         btnKembali.setOnClickListener(v -> finish());
 
         btnLogout.setOnClickListener(v -> {
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.clear();
-            editor.apply();
+            new AlertDialog.Builder(EditProfileActivity.this)
+                    .setTitle("Konfirmasi Logout")
+                    .setMessage("Apakah Anda yakin ingin logout?")
+                    .setPositiveButton("Ya", (dialog, which) -> {
+                        // Hapus SharedPreferences
+                        SharedPreferences.Editor editor = prefs.edit();
+                        editor.clear();
+                        editor.apply();
 
-            Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
-            finish();
+                        // Pindah ke LoginActivity dan hapus aktivitas sebelumnya
+                        Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(intent);
+                        finish();
+                    })
+                    .setNegativeButton("Tidak", null) // Tidak melakukan apa-apa jika memilih "Tidak"
+                    .show();
         });
-
-
     }
 }

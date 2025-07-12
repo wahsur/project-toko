@@ -3,6 +3,7 @@ package com.example.toko;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.*;
 
 import com.example.toko.api.apiClient;
@@ -18,6 +19,7 @@ import java.util.List;
 public class ListTransaksiActivity extends Activity {
 
     ListView listView;
+    Button btnBack;
     List<Transaksi> list;
 
     @Override
@@ -26,6 +28,7 @@ public class ListTransaksiActivity extends Activity {
         setContentView(R.layout.activity_list_transaksi);
 
         listView = findViewById(R.id.listViewTransaksi);
+        btnBack = findViewById(R.id.btnBack);
 
         apiService api = apiClient.getClient().create(apiService.class);
         api.getTransaksi().enqueue(new Callback<ResponseTransaksi>() {
@@ -50,6 +53,13 @@ public class ListTransaksiActivity extends Activity {
             @Override
             public void onFailure(Call<ResponseTransaksi> call, Throwable t) {
                 Toast.makeText(ListTransaksiActivity.this, "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ListTransaksiActivity.this, MainActivity.class));
             }
         });
     }

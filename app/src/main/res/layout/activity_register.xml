@@ -51,10 +51,19 @@
             android:hint="Password"
             android:background="@drawable/edittext_background"
             android:padding="12dp"
-            android:layout_marginBottom="24dp"
             android:inputType="textPassword"
             android:textColor="#000"
             android:textColorHint="#999" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:text="Sudah punya akun? Login di sini."
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnRegister"

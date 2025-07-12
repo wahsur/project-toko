@@ -1,7 +1,10 @@
 package com.example.toko;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.toko.model.Transaksi;
@@ -9,10 +12,13 @@ import com.example.toko.model.TransaksiDetail;
 
 public class DetailTransaksiActivity extends Activity {
 
+    Button btnBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_transaksi);
+        btnBack=findViewById(R.id.btnBack);
 
         Transaksi trx = (Transaksi) getIntent().getSerializableExtra("transaksi");
 
@@ -34,6 +40,13 @@ public class DetailTransaksiActivity extends Activity {
         }
 
         info.setText(sb.toString());
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DetailTransaksiActivity.this, ListTransaksiActivity.class));
+            }
+        });
     }
 }
 

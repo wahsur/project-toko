@@ -1,5 +1,6 @@
 package com.example.toko;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,7 +18,7 @@ import retrofit2.Response;
 public class AddEditKategori extends AppCompatActivity {
 
     EditText etNamaKategori;
-    Button btnSimpan, btnHapus;
+    Button btnSimpan, btnHapus, btnBack;
     apiService api;
     Kategori kategoriEdit;
 
@@ -29,6 +30,7 @@ public class AddEditKategori extends AppCompatActivity {
         etNamaKategori = findViewById(R.id.etNamaKategori);
         btnSimpan = findViewById(R.id.btnSimpanKategori);
         btnHapus = findViewById(R.id.btnHapusKategori);
+        btnBack = findViewById(R.id.btnBack);
         api = apiClient.getClient().create(apiService.class);
 
         if (getIntent().hasExtra("kategori")) {
@@ -41,6 +43,12 @@ public class AddEditKategori extends AppCompatActivity {
 
         btnSimpan.setOnClickListener(v -> simpanKategori());
         btnHapus.setOnClickListener(v -> hapusKategori());
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AddEditKategori.this, KategoriActivity.class));
+            }
+        });
     }
 
     private void simpanKategori() {

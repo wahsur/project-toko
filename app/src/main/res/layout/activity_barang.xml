@@ -8,7 +8,6 @@
     <Button
         android:id="@+id/btnTambahBarang"
         android:text="Tambah Barang"
-
         style="@style/ButtonToko"
         android:drawableStart="@drawable/ic_add"
         android:gravity="center_vertical"

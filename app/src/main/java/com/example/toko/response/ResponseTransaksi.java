@@ -4,7 +4,7 @@ import com.example.toko.model.Transaksi;
 
 import java.util.List;
 
-public class ResponseTransaksi {
+public class   ResponseTransaksi {
     private boolean success;
     private List<Transaksi> data;
 

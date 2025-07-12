@@ -1,10 +1,12 @@
 package com.example.toko;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.toko.api.apiClient;
@@ -19,6 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     EditText etNamaToko, etUsername, etPassword;
     Button btnRegister;
+    TextView tvLogin;
     apiService api;
 
     @Override
@@ -30,6 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnRegister = findViewById(R.id.btnRegister);
+        tvLogin = findViewById(R.id.tvLogin);
 
         api = apiClient.getClient().create(apiService.class);
 
@@ -38,6 +42,10 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 registerUser();
             }
+        });
+
+        tvLogin.setOnClickListener(view -> {
+            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
         });
     }
 
