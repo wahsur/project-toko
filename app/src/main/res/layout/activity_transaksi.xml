@@ -162,6 +162,42 @@
                 android:textColor="#D32F2F"
                 android:layout_marginBottom="16dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayar"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+            <EditText
+                android:id="@+id/edtBayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan jumlah bayar"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_input"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnKembalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hitung Kembalian"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_rounded"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/txtKembalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kembalian: Rp0"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#D32F2F"
+                android:layout_marginBottom="16dp" />
+
             <!-- Tombol Simpan -->
             <Button
                 android:id="@+id/btnSimpan"
