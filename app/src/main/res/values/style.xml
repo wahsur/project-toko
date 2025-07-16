@@ -13,7 +13,7 @@
     <style name="ButtonLogout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:backgroundTint">#EF2525</item> <!-- Biru -->
+        <item name="android:backgroundTint">#EF2525</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:layout_marginBottom">12dp</item>

@@ -30,6 +30,7 @@
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:background="@drawable/rounded_gray" />
+        android:backgroundTint="#B0B0B0"
+        android:background="@drawable/button_rounded" />
 
 </LinearLayout>

@@ -11,7 +11,6 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <!-- Judul -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +20,6 @@
             android:textColor="#002B5B"
             android:layout_marginBottom="24dp" />
 
-        <!-- Input Nama Toko -->
         <EditText
             android:id="@+id/etNamaToko"
             android:layout_width="match_parent"
@@ -32,7 +30,6 @@
             android:textColorHint="#636363"
             android:layout_marginBottom="16dp" />
 
-        <!-- Input Nama Pengguna -->
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
@@ -43,7 +40,6 @@
             android:textColorHint="#636363"
             android:layout_marginBottom="16dp" />
 
-        <!-- Input Password Baru -->
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
@@ -55,26 +51,23 @@
             android:textColorHint="#636363"
             android:layout_marginBottom="24dp" />
 
-        <!-- Tombol Simpan -->
         <Button
             android:id="@+id/btnUpdate"
             style="@style/ButtonToko"
             android:text="Simpan Perubahan" />
 
-        <!-- Tombol Kembali -->
         <Button
             android:id="@+id/btnKembali"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#B0B0B0"
-            android:textColor="@android:color/white"
+            android:textColor="#FFFFFF"
             android:text="Kembali"
             android:textAllCaps="false"
             android:layout_marginBottom="12dp"
             android:padding="12dp"
             android:background="@drawable/button_rounded"/>
 
-        <!-- Tombol Logout -->
         <Button
             android:id="@+id/btnLogout"
             style="@style/ButtonLogout"

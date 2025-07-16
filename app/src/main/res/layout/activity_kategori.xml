@@ -29,10 +29,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_gray"
+        android:background="@drawable/button_rounded"
         android:text="Kembali"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
+        android:backgroundTint="#B0B0B0"
         android:textStyle="bold" />
 
 </LinearLayout>
